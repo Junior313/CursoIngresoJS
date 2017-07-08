@@ -10,5 +10,44 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+ 	var Costo;
+ 	var Cantidad;
+ 	var Marca;
+ 	var Descuento;
+ 	var Preciofinal;
+ 	var PreciofinalconDescuento;
+
+ 	costo=35;
+ 	marca=document.getElementById('Marca').value;
+ 	alert(marca);
+
+ 	Cantidad=document.getElementById('Cantidad').value;
+ 	alert(Cantidad);
+
+
+	Preciofinal=Cantidad*costo;
+
+ 	if(Cantidad>5)
+ 	{
+ 		Descuento=0.5;
+ 	}
+
  	
+
+ 	if(Cantidad==5)
+ 	{
+ 		if (marca=="ArgentinaLuz")
+ 		{
+ 			Descuento=0.6;
+ 		}
+ 		else
+ 		{
+ 			Descuento=0.7;
+ 		}
+
+ 	}
+ 	
+ 	PreciofinalconDescuento=Preciofinal*Descuento;
+
+ 	alert(PreciofinalconDescuento);
 }
