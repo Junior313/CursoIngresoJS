@@ -1,8 +1,14 @@
 function Mostrar()
 {
 
-var sexo = prompt("ingrese f ó m .");
-
+var sexo;
+sexo = prompt("ingrese f ó m .");
+while(sexo!="f" && sexo!="m")
+{
+	alert("Reingrese");
+	sexo = prompt("ingrese f o m");
+}
+	alert("correcto");
 
 
 document.getElementById('Sexo').value=sexo;
